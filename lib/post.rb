@@ -9,11 +9,12 @@ class Post
     @@all << self
   end
 
+  def author(author)
+    @author = author
+  end
+
   def author_name
-    if !@author
-    else
-      @author.name
-    end
+    @author ? @author.name : nil
   end
 
   def self.all
