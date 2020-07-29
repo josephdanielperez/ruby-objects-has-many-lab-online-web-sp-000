@@ -14,11 +14,7 @@ class Post
   end
 
   def author_name
-    if !@author
-    else
-      @author.name
-    end
-  end
+    @author ? @author.name : nil
 
   def self.all
     @@all
