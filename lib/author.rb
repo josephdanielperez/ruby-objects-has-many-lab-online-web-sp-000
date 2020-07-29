@@ -7,6 +7,7 @@ attr_accessor :name
   def initialize(name)
     @name = name
     @posts = []
+    @@post_count += 1
   end
 
   def posts
