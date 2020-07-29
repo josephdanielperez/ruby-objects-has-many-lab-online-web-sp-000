@@ -6,6 +6,7 @@ class Song
 
   def initialize(name)
     @name = name
+    Artist.song_count += 1
     save
   end
 
