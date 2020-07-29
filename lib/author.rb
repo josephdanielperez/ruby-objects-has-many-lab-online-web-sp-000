@@ -12,6 +12,7 @@ attr_accessor :name
 
   def posts
     @posts
+    @@post_count =+ 1
   end
 
   def self.post_count
