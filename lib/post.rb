@@ -5,7 +5,7 @@ class Post
   @@all = []
 
   def initialize(title)
-    @title = title
+    @title = name
     save
   end
 
@@ -14,7 +14,10 @@ class Post
   end
 
   def author_name
-    @author ? @author.title : nil
+    if !@author
+    else
+      @author.name
+    end
   end
 
   def self.all
